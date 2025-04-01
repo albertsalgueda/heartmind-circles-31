@@ -60,6 +60,7 @@ const NavLinks = ({ mobile = false }: { mobile?: boolean }) => {
       <Link to="/vision" className={linkClass}>Vision</Link>
       <Link to="/host-ai" className={linkClass}>Host AI</Link>
       <Link to="/circles" className={linkClass}>Sacred Circles</Link>
+      <Link to="/manifesto" className={linkClass}>Manifesto</Link>
     </div>
   );
 };
