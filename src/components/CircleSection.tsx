@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const CircleSection = () => {
   return (
@@ -39,9 +40,11 @@ const CircleSection = () => {
           <p className="text-lg mb-6 max-w-2xl mx-auto">
             Join a circle and experience the transformative power of connection in a sacred, supportive environment guided by both human wisdom and artificial intelligence.
           </p>
-          <Button className="bg-spiritual-purple hover:bg-spiritual-purple/90 rounded-full">
-            Find Your Circle
-          </Button>
+          <Link to="/circle-interview">
+            <Button className="bg-spiritual-purple hover:bg-spiritual-purple/90 rounded-full">
+              Find Your Circle
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

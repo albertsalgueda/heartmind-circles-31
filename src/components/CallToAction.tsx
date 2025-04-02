@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const CallToAction = () => {
   return (
@@ -14,12 +15,16 @@ const CallToAction = () => {
           "This is Universal Spiritualism — Where presence scales infinitely. Where technology serves the sacred. Where humanity evolves together."
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button className="bg-spiritual-purple hover:bg-spiritual-purple/90 rounded-full">
-            Join the Movement
-          </Button>
-          <Button variant="outline" className="rounded-full border-spiritual-purple text-spiritual-purple hover:bg-spiritual-light">
-            Learn More
-          </Button>
+          <Link to="/circle-interview">
+            <Button className="bg-spiritual-purple hover:bg-spiritual-purple/90 rounded-full">
+              Join the Movement
+            </Button>
+          </Link>
+          <Link to="/vision">
+            <Button variant="outline" className="rounded-full border-spiritual-purple text-spiritual-purple hover:bg-spiritual-light">
+              Learn More
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

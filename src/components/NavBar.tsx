@@ -20,9 +20,11 @@ const NavBar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">
           <NavLinks />
-          <Button variant="outline" className="rounded-full border-spiritual-purple text-spiritual-purple hover:bg-spiritual-light">
-            Join a Circle
-          </Button>
+          <Link to="/circle-interview">
+            <Button variant="outline" className="rounded-full border-spiritual-purple text-spiritual-purple hover:bg-spiritual-light">
+              Join a Circle
+            </Button>
+          </Link>
         </div>
         
         {/* Mobile Navigation */}
@@ -37,9 +39,11 @@ const NavBar = () => {
             <SheetContent className="bg-gradient-to-b from-white to-spiritual-gray">
               <div className="flex flex-col gap-6 mt-10">
                 <NavLinks mobile />
-                <Button className="rounded-full bg-spiritual-purple hover:bg-spiritual-purple/90">
-                  Join a Circle
-                </Button>
+                <Link to="/circle-interview">
+                  <Button className="rounded-full bg-spiritual-purple hover:bg-spiritual-purple/90">
+                    Join a Circle
+                  </Button>
+                </Link>
               </div>
             </SheetContent>
           </Sheet>
